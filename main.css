@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: #1cb200;
+  background-color: black;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.columnBTS {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowBTS {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.enter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.head {
+  font-family: serif;
+  font-size: 70px;
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #1cb200;
+
+  font-size: 80px;
+  color: #003200;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #003200, 0 0 20px #003200, 0 0 30px #1cb200,
+      0 0 40px #1cb200, 0 0 50px #1cb200, 0 0 60px #003200, 0 0 70px #1cb200;
+  }
+  to {
+    text-shadow: 0 0 30px #003200, 0 0 30px #1cb200, 0 0 40px green,
+      0 0 50px #1cb200, 0 0 60px #003200, 0 0 70px #003200, 0 0 80px #000000;
+  }
+}
+
+.hidden {
+  color: black;
+}
+
+.subtxt {
+  font-size: 30px;
+  font-family: serif;
+  flex-wrap: wrap;
+}
+
+/* 
+.interactive{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+   justify-content: center; 
+
+} */
+
+.question {
+  font-size: 17px;
+}
+
+.button1 {
+  color: #1cb200;
+  font-family: "Courier New", Courier, monospace;
+  color: #1cb200;
+  background-color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-color: #1cb200;
+  padding: 30px;
+  margin: 40px;
+  font-size: 17px;
+  width: 400px;
+
+
+}
+
+.enter {
+  color: #1cb200;
+  font-family: "Courier New", Courier, monospace;
+  color: #1cb200;
+  background-color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-color: #1cb200;
+  padding: 30px;
+  margin: 40px;
+  font-size: 15px;
+  width: 400px;
+  margin-top: 300px;
+  font-size: 30px
+
+ 
+    /* margin: 0px;
+    background-color: #000;
+    border-color: #000;
+  
+  
+    
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    box-shadow:
+      0 0 60px 30px rgb(2, 30, 56),
+      0 0 40px 60px rgb(99, 68, 1),
+      0 0 140px 90px #0ff;  */
+
+    
+  
+
+      
+        /* position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 50px;
+        border: 2px solid white;
+      }
+
+      .enter:before,
+      .enter:after, span {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        border-radius: 50%;
+        box-shadow: 0 0 15px #287ec6;
+        animation: glow-grow 2s ease-out infinite;
+      }
+      .enter:after {
+        animation-delay: .66s;
+      }
+      span{
+        animation-delay: 1.33s;
+        }
+      @keyframes glow-grow {
+        0% {
+          opacity: 0;
+          transform: scale(1);
+        }
+        80% {
+          opacity: 1;
+        }
+        100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+      */
+      
+
+
+
