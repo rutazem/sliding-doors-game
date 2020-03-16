@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 body {
   font-family: "Courier New", Courier, monospace;
   color: #1cb200;
@@ -54,7 +47,8 @@ body {
   font-family: serif;
   font-size: 70px;
   color: black;
-  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: black;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #1cb200;
 
@@ -71,6 +65,7 @@ body {
     text-shadow: 0 0 10px #003200, 0 0 20px #003200, 0 0 30px #1cb200,
       0 0 40px #1cb200, 0 0 50px #1cb200, 0 0 60px #003200, 0 0 70px #1cb200;
   }
+
   to {
     text-shadow: 0 0 30px #003200, 0 0 30px #1cb200, 0 0 40px green,
       0 0 50px #1cb200, 0 0 60px #003200, 0 0 70px #003200, 0 0 80px #000000;
@@ -115,9 +110,16 @@ body {
   margin: 40px;
   font-size: 17px;
   width: 400px;
-
+  outline: none;
 
 }
+
+
+
+
+
+
+
 
 .enter {
   color: #1cb200;
@@ -133,10 +135,66 @@ body {
   font-size: 15px;
   width: 400px;
   margin-top: 300px;
-  font-size: 30px
+  font-size: 30px;
+  outline: none;
+}
 
- 
-    /* margin: 0px;
+
+.enter:hover {
+  animation: glow 1s ease-in infinite;
+}
+
+.enter::before {
+  animation: glow 3s ease-in infinite;
+  background: $color-primary;
+  /* border-radius: inherit; */
+  content: '';
+  filter: blur(10px);
+  opacity: .75;
+  position: absolute;
+  transition: all .2s ease-in-out;
+
+  padding: 30px;
+  margin: 40px;
+  font-size: 15px;
+  width: 400px;
+  margin-top: 300px;
+  font-size: 30px;
+  /* width: 100%;
+  height: 100%; */
+  /* top: 0;
+  right: 0;
+  z-index: -1; */
+}
+
+.enter:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+}
+}
+
+@keyframes glow {
+  0% {
+    background: $color-primary;
+  }
+
+  25% {
+    background: $color-primary-light;
+  }
+
+  100% {
+    background: $color-primary;
+  }
+}
+
+
+
+
+
+
+
+
+/* margin: 0px;
     background-color: #000;
     border-color: #000;
   
@@ -154,11 +212,11 @@ body {
       0 0 40px 60px rgb(99, 68, 1),
       0 0 140px 90px #0ff;  */
 
-    
-  
 
-      
-        /* position: relative;
+
+
+
+/* position: relative;
         height: 100px;
         width: 100px;
         border-radius: 50%;
@@ -198,7 +256,3 @@ body {
         }
       }
       */
-      
-
-
-
