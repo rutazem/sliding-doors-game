@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
 
 
@@ -19,42 +22,59 @@
 
 <body>
 
-    <div> <button class="enter" type="button" style="display:block"> Enter</button> </div>
+    <div class="wrapper">
+
+        <div> <button class="enter" type="button" style="display:block"> Enter</button> </div>
 
 
-    <div class="main">
+        <div class="main">
 
-        <div class=columnBTS>
-            <p class="head" style="display:none">SLIDING DOORS</p>
+            <div class=columnBTS>
+                <p class="head" style="display:none">SLIDING DOORS</p>
 
-            <!-- <div class="text"> -->
-            <p class="subtxt" style="display:none">EVERY CHOICE WILL RENDER YOUR PATH</p>
+                <!-- /*<img src="tenor.gif" class="gif" width="500px"> -->
 
-            <!-- <div class="interactive" style="display:none"> -->
-            <div>
-                <button class="question button1" type="button" style="display:none">
-                    It’s 1983. <br>
-                    Your name is Cameron Howe. You are a young undergraduate software engineer in Texas, Dallas. You get
-                    an offer to write a new OS for a PC project for utilities company. <br>
-                    Do you take the offer?
-                </button>
+                <!-- <div class="text"> -->
+                <p class="subtxt" style="display:none">EVERY CHOICE WILL RENDER YOUR PATH</p>
+
+                <!-- <div class="interactive" style="display:none"> -->
+                <div>
+                    <button class="question button1" type="button" style="display:none">
+                        It’s 1983. <br>
+                        Your name is Cameron Howe. You are a young undergraduate software engineer in Texas, Dallas. You
+                        get
+                        an offer to write a new OS for a PC project for utilities company. <br>
+                        Do you take the offer?
+                    </button>
+                </div>
             </div>
+
+
+            <div class="rowBTS">
+                <button class="A1 button1" type="button" style="display:none">Take the offer</button>
+                <button class="A2 button1" type="button" style="display:none">Refuse</button>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+
         </div>
 
+        <script type="text/javascript" src="canvas.js"></script>
+        <script type="text/javascript" src="storyline.js"></script>
+        <script type="text/javascript" src="main.js"></script>
 
-        <div class="rowBTS">
-            <button class="A1 button1" type="button" style="display:none">Take the offer</button>
-            <button class="A2 button1" type="button" style="display:none">Refuse</button>
-        </div>
-        <!-- </div> -->
-        <!-- </div> -->
 
+
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script> -->
     </div>
-
-    <script type="text/javascript" src="canvas.js"></script>
-    <script type="text/javascript" src="storyline.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-
 
 
 </body>

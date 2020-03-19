@@ -1,6 +1,16 @@
+
+
+
+
+/* .wrapper {
+  width: 100%;
+  padding: 10px;
+} */
+
+
 body {
   font-family: "Courier New", Courier, monospace;
-  color: #1cb200;
+  color: #80FF80;
   background-color: black;
 
   display: flex;
@@ -8,7 +18,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  /* margin: 30px; */
+  width: 100%;
+  overflow-x: hidden;
+  align-content: center;
 }
 
 .columnBTS {
@@ -50,7 +63,7 @@ body {
   -webkit-text-fill-color: black;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #1cb200;
+  -webkit-text-stroke-color: #80FF80;
 
   font-size: 80px;
   color: #003200;
@@ -80,6 +93,12 @@ body {
   font-size: 30px;
   font-family: serif;
   flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  
 }
 
 /* 
@@ -95,6 +114,8 @@ body {
 
 .question {
   font-size: 17px;
+  width: 80%;
+
 }
 
 .button1 {
@@ -131,7 +152,7 @@ body {
   justify-content: center;
   border-color: #1cb200;
   padding: 30px;
-  margin: 40px;
+  /* margin: 40px; */
   font-size: 15px;
   width: 400px;
   margin-top: 300px;

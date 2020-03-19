@@ -23,15 +23,18 @@ let question = document.querySelector(".question")
 
 ////////// TYPED TEXT CHANGE
 function changeText(target, input) {
-    let index = 0;
+    //alert(input)
     target.innerHTML = `<span class="hidden">.</span>`
-    let interval = setInterval(function () {
+    let writeALetter = function (index) {
+        //alert('hey')
         target.innerHTML = target.innerHTML + input[index]
         if (index === input.length - 1) {
-            clearInterval(interval)
+            //clearInterval(interval)
+        } else {
+            setTimeout(() => writeALetter(index + 1), 40)
         }
-        index++
-    }, 40)
+    }
+    writeALetter(0)
 }
 
 
@@ -105,12 +108,14 @@ function renderAnswer(domElement, answer) {
 
     console.log(answer)
 
-    if (answer.nextQuestion) {
+    if (answer.restart === true) {
+        domElement.onclick = () => window.location.reload()
+    } else if (answer.nextQuestion) {
 
         domElement.onclick = () => renderQuestion(answer.nextQuestion)
 
     } else {
-        domElement.onclick = () => console.log('finish')
+        domElement.onclick = () => console.log("finished")
     }
     changeText(domElement, answer.text)
 

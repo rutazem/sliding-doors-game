@@ -47,11 +47,11 @@
 
 
 //////////////// PORTABLE PC
-let QACE2 = {
-    text: " Portable PC ",
+let QACE2 = { // The End
+    text: " Path of creating Portable PC ",
     answers: [
-        { text: " Credits:  ", },
-        { text: " Restart your future", },
+        { text: " Credits:  " },
+        { text: " Restart your future", restart: true },
     ]
 }
 
@@ -61,7 +61,7 @@ let QCE41 = { // Atari buys out cardiff - cam loses the game
     text: " Your team has completed the demo well, but unfortunately got no press from the media. Your PC resembled all other PCs in the expo. In weeks to come, the sales of the PC did not pick up and your company had to be sold to a company called Atari. Since you've been working on a side project, it tecnically belonged to your company as an intellectual property. You lost rights to ever sell or produce it - it now belongs to Atari - a gaming company that bought out your utilities company.",
     answers: [
         { text: " Credits: ", },
-        { text: " Restart your future", }
+        { text: " Restart your future", restart: true }
     ]
 }
 
@@ -70,7 +70,7 @@ let QCE42 = { // Atari hires cameron
     text: " Your team runs into a live demo problem that only you can fix, someone at the crowd watched you fix the bug to the problem they've been trying to tackle in their company. They come up to you after the demo. It's a gaming company called Atari - they want to hire you.",
     answers: [
         { text: " Credits: ", },
-        { text: " Restart your future ", },
+        { text: " Restart your future ", restart: true },
     ]
 }
 
@@ -87,7 +87,7 @@ let QAE72 = { // Cam saves the PC  and makes it the only competitor to Mac
     text: " You have saved the GUI of the PC. The press picks it up and it is compared as a direct competitor to APPLE as it's only two PCs after XEROX that are implementing GUI into their OSs.  ",
     answers: [
         { text: " Credits:  ", },
-        { text: " Restart your future ", },
+        { text: " Restart your future ", restart: true },
     ]
 }
 
@@ -96,7 +96,7 @@ let QAE71 = { // Cam quits and cardiff goes bust because of mediocricy
     text: " The end: Two days later Apple Inc is demoing the the first Mackintosh in COMDEX. Everyone from your team realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. ",
     answers: [
         { text: " Credits: ", },
-        { text: " Restart your future ", },
+        { text: " Restart your future ", restart: true },
     ]
 }
 
@@ -118,7 +118,7 @@ let QAE62 = { // The end where cam loses everything apart motorcycle
     text: "The End: You have taken a week away from work.  You're ready to drive back as you receive a call from your product manager Joe, telling you that they had to take out the part of your GUI in order to make a live demo, as the PC was not loading the last minute. They have made contracts with production that same day and this will be the final release model. A day later Apple Inc is demoing the the first Mackintosh in COMDEX. Everyone realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. ",
     answers: [
         { text: " Credits: ", }, // mutiny?
-        { text: " Restart your future ", },
+        { text: " Restart your future ", restart: true },
     ]
 }
 
@@ -130,7 +130,7 @@ let QAE52 = { //The End with Mackintosh/1984 ad
     text: ` Your contribution to the industry will change its' landscape forever. It's the first Mackintosh. You're the girl in the "1984 ad. You're the girl behind the idea of "Hello. I'm Mackintosh." `,
     answers: [
         { text: " .... gif of the  ", },
-        { text: " Link to Joe seeing the Mackintosh ", },
+        { text: " Link to Joe seeing the Mackintosh ", restart: true },
     ]
 }
 
@@ -272,7 +272,7 @@ let QA = { // START
     text: "It’s 1984. Your name is Cameron Howe. You're about to graduate as a software engineer in Texas, Dallas. Nothing matters to yo more than the future of coputers. You get an offer to quit university and take up job to write a new OS for a PC project for utilities company. Do you take the offer?",
     answers: [
         { text: "Take the offer, but with the only condition: to double your proposed salary.", nextQuestion: QA21 },
-        { text: "Refuse and stay in the university.", nextQuestion: QA22 },
+        { text: "Refuse and stay in the university.", nextQuestion: QA22, },
     ]
 }
 
