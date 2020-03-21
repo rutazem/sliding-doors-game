@@ -108,16 +108,15 @@ body {
 
 } */
 
-.question {
-  font-size: 17px;
-  max-width: 400px;
 
-}
+
+
+
+
 
 .button1 {
   color: #1cb200;
   font-family: "Courier New", Courier, monospace;
-  color: #1cb200;
   background-color: black;
   flex-direction: row;
   align-items: center;
@@ -128,8 +127,6 @@ body {
   font-size: 17px;
   /* width: 400px; */
   width: 330px;
-
-
   outline: none;
 
   margin-top: 20px;
@@ -138,6 +135,7 @@ body {
   /* outline: red; */
 
 }
+
 
 
 
@@ -157,10 +155,10 @@ body {
   /* width: 400px; */
   width: 330px;
 
-
   margin-top: 300px;
   font-size: 30px;
-  /* outline: none; */
+  outline: none;
+
 }
 
 
@@ -182,10 +180,15 @@ body {
   animation: glow 1s ease-in infinite;
 }
 
+.enter:active {
+  outline: 5px solid #83f183;
+  border-color: #83f183;
+}
+
 .enter::before {
   animation: glow 3s ease-in infinite;
   background: $color-primary;
-  /* border-radius: inherit; */
+  border-radius: inherit;
   content: '';
   filter: blur(10px);
   opacity: .75;
@@ -198,11 +201,7 @@ body {
   width: 400px;
   margin-top: 300px;
   font-size: 30px;
-  /* width: 100%;
-  height: 100%; */
-  /* top: 0;
-  right: 0;
-  z-index: -1; */
+
 }
 
 .enter:hover::before {
@@ -224,6 +223,69 @@ body {
     background: $color-primary;
   }
 }
+
+.button1:hover {
+  animation: glow 1s ease-in infinite;
+}
+
+.button1:active {
+  outline: 5px solid #83f183;
+  border-color: #83f183;
+}
+
+.button1::before {
+  animation: glow
+    /* 3s ease-in infinite; */
+    /* background: $color-primary; */
+    /* border-radius: inherit; */
+    /* content: '';
+  filter: blur(10px);
+  opacity: 1.5;
+  position: absolute;
+  transition: all 2s ease-in-out;
+
+  padding: 30px;
+  margin: 40px;
+  font-size: 15px;
+  width: 400px;
+  margin-top: 300px;
+  font-size: 30px; */
+
+}
+
+.button1:hover::before {
+  /* filter: blur(20px);
+  opacity: 1; */
+  animation: glow
+}
+}
+
+
+
+.question {
+  font-size: 17px;
+  max-width: 400px;
+  outline: none;
+
+}
+
+.question:hover {
+  animation: none;
+}
+
+
+
+
+
+
+
+
+.button1:active {
+  outline: 5px solid #83f183;
+  border-color: #83f183;
+
+}
+
 
 
 

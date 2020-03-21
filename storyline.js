@@ -33,11 +33,14 @@
 //     ]
 // }
 
+
+
+
 // let QA51 = {
 //     text: " question  ",
 //     answers: [
-//         { text: ". ", nextQuestion: QA41 },
-//         { text: ".", nextQuestion: QA42 },
+//         { text: "Credits:", },
+//         { text: "Restart your future", restart: true },
 //     ]
 // }
 
@@ -82,13 +85,13 @@ let QEMUW = {
 
 
 
-let QMG3 = { /// Game path alone
-    text: "",
-    answers: [
-        { text: ". ", },
-        { text: ".", },
-    ]
-}
+// let QMG3 = { /// Game path alone
+//     text: "",
+//     answers: [
+//         { text: ". ", },
+//         { text: ".", },
+//     ]
+// }
 
 let QMV3 = { /// Chatroom Path > move to SF
     text: `Developing chatrooms allowed Mutiny to grow and move to Sillicon Valley. However, your usernet started getting smaller in last few weeks. You find out that someone has been jeopardising "Mutiny" with an unseen computer program released into the network through an unknown user. Do you...`,
@@ -111,7 +114,7 @@ let QMT2 = { /// TOM PATH>Game path
 let QMT3 = { /// CHAT PATH>money
     text: "The text based game that you've built is not picking up. You've noticed that your users are chatting more than they are playing. You decide to develop private chatrooms and it really gains popularity. Your company's equity increases. It's time to make a decision. Do you... ",
     answers: [
-        { text: "Try and figure out how to remain a gaming company.", nextQuestion: QMG3 },
+        { text: "Try and figure out how to remain a gaming company.", /*nextQuestion: QMG3 */ restart: true },
         { text: "Switch gears and go fully into online chatroom development.", nextQuestion: QMV3 },
     ]
 }
@@ -201,7 +204,7 @@ let QAE72 = { // Cam saves the PC  and makes it the only competitor to Mac
 
 
 let QAE71 = { // Cam quits and cardiff goes bust because of mediocricy
-    text: "<b>The End:</b><br>Two days later Apple Inc is demoing the the first Mackintosh in COMDEX. Everyone from your team realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. ",
+    text: "<b>The End:</b><br>Two days later Apple Inc is demoing the the first Mackintosh in COMDEX'83. Everyone from your team realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. ",
     answers: [
         { text: " Credits: ", },
         { text: " Restart your future ", restart: true },
@@ -237,7 +240,7 @@ let QAE62 = { // The end where cam loses everything apart motorcycle
 let QAE52 = { //The End with Mackintosh/1984 ad
     text: `<b>The End:</b><br>Your contribution to the industry will change its' landscape forever. It's the first Mackintosh. You're the person with the hammer in the "1984 ad. You're the mind behind the idea of "Hello. I'm Mackintosh." `,
     answers: [
-        { text: " .... gif of the  ", },
+        { text: " Credits: ", },
         { text: "Restart your future", restart: true },
     ]
 }
@@ -245,18 +248,18 @@ let QAE52 = { //The End with Mackintosh/1984 ad
 
 
 
-// let QAE51 = { //The end with wozniak
-//     text: " The end - meek?  ",
-//     answers: [
-//         { text: " Credits:  ", },
-//         { text: " Restart your future", },
-//     ]
-// }
+let QEWOZG = { //The end with wozniak + gordon
+    text: "<b>The End:</b><br>Your idea didn't make it to the main cut, but you were onboarded on a secret project that only he was developing on side - <b>portable computers</b>. He asked you to leave the company with him and implement your idea for the portable's GUI.",
+    answers: [
+        { text: " Credits:  ", },
+        { text: " Restart your future", restart: true },
+    ]
+}
 
 
 
 let QA5 = {
-    text: " Your idea to make computers interactive and speak back to the user had made the cut to the final product. Because of this feature you've been asked to participate in the marketing campaign of the release. ",
+    text: "Your idea to make computers interactive and speak back to the user had made the cut to the final product. Because of this feature you've been asked to participate in the marketing campaign of the release. ",
     answers: [
         { text: " Accept the invitation ", nextQuestion: QAE52 },
         { text: " You'd rather not ", nextQuestion: QACE2 },
@@ -266,20 +269,20 @@ let QA5 = {
 
 
 let QA42 = {
-    text: " Your idea was to make computers interactive. More like human. Maybe they can write out your name. Say hello to you. Out loud. No one has ever went here. It's your chance. To whom do you pitch it? ",
+    text: "Your idea was to make computers interactive. More like human. Maybe they can write out your name. Say hello to you. Out loud. No one has ever went here. It's your chance. To whom do you pitch it? ",
     answers: [
         { text: " Steve Jobs ", nextQuestion: QA5 },
-        { text: " Steve Wozniak ", nextQuestion: QACE2 },
+        { text: " Steve Wozniak ", nextQuestion: QEWOZG },
     ]
 }
 
 
 
 let QA41 = {
-    text: " You haven't shared your idea. someone from CARDIFF electrics comes up with GUI in a live demo???? ", /// APPLE //// someone from CARDIFF electrics comes up with GUI in a live demo????
+    text: "<b>The End:</b><br>So it happened that someone from Cardiff Electrics came up with an idea just like yours and had guts to impplement it. Their PC was showcased it at COMDEX'83 and picked up the press noise quite fast. ", /// APPLE //// someone from CARDIFF electrics comes up with GUI in a live demo????
     answers: [
-        { text: " Go to a question that gives you ", },
-        { text: " ", },
+        { text: " Credits: ", }, // mutiny?
+        { text: " Restart your future ", restart: true }
     ]
 }
 
@@ -288,8 +291,8 @@ let QA41 = {
 let QA441 = {
     text: "You have fully implemented your ideas, the first demo PC is ready to be demonstrated at COMDEX'83. However, you receive a call from your step mother informing you that she will be selling your dad's motorcycle, since it's the only valuable thing that is left after his passing from a year ago, and she would really benefit by cashing out. It's the last chance to save the motorcycle. Do you....:   ",
     answers: [
-        { text: " Decide to go back to your childhood home and buy out your dad's motorcycle. He was the only close person you had growing up. ", nextQuestion: QAE62 },
-        { text: " Get on a plane to Silicon Valley to attend the COMDEX conference. It's your first ever product that will be displayed amogst many industry's veterans. ", nextQuestion: QAE61 },/// PC doesnt load, they are arguing if they can make it run.
+        { text: "Decide to go back to your childhood home and buy out your dad's motorcycle. He was the only close person you had growing up. ", nextQuestion: QAE62 },
+        { text: "Get on a plane to Silicon Valley to attend the COMDEX conference. It's your first ever product that will be displayed amogst many industry's veterans. ", nextQuestion: QAE61 },/// PC doesnt load, they are arguing if they can make it run.
         /// The End: You have taken a week away from work.  You're ready to drive back as you receive a call from your product manager Joe, telling you that they had to take out the part of your GUI in order to make a live demo, as the PC was not loading the last minute. They have made contracts with production that same day and this will be the final release model. A day later Apple Inc is demoing the the first Mackintosh in COMDEX. Everyone realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. 
     ]
 }
@@ -297,10 +300,10 @@ let QA441 = {
 
 
 let QA442 = { /////////// CREATE A GAME ON SIDE -  AVERAGE GUI - BUST, TAKES YOUR GAME AS INTELECTUAL PROPERTY
-    text: ` Your own side project is a game - "Space Bike", called after your dad's motorcycle. You work on a game alongside wiritng the BIOS for your company. As the project is complete, your company asks you to join them in COMDEX'83 - the biggest computer hardware and software expo in the world. Do you... `,
+    text: `Your own side project is a game - "Space Bike", called after your dad's motorcycle. You work on a game alongside wiritng the BIOS for your company. As the project is complete, your company asks you to join them in COMDEX'83 - the biggest computer hardware and software expo in the world. Do you... `,
     answers: [
-        { text: " Stay at home to finalise your game. You needed this time to finally focus on your own creativity.", nextQuestion: QCE41 }, // The end: Goes to COMDEX, GETS BUST
-        { text: " Join the team in the expo - it's a monumental moment. ", nextQuestion: QCE42 }, // The end: the team runs into a live demo problem that only you can fix, someone at the crowd watched you fix the bug to the problem they've been trying to tackle in their company. They come up to you after the demo. It's a gaming company called Atari. 
+        { text: "Stay at home to finalise your game. You needed this time to finally focus on your own creativity.", nextQuestion: QCE41 }, // The end: Goes to COMDEX, GETS BUST
+        { text: "Join the team in the expo - it's a monumental moment. ", nextQuestion: QCE42 }, // The end: the team runs into a live demo problem that only you can fix, someone at the crowd watched you fix the bug to the problem they've been trying to tackle in their company. They come up to you after the demo. It's a gaming company called Atari. 
     ]
 }
 
@@ -318,7 +321,7 @@ let QA4 = {
 }
 
 let QA3 = { // MUTINY PATH
-    text: "Being a cog in a wheel was never your thing anyway: Welcome to Mutiny - your company - one of the very first onine gaming platforms. You have to decide if you want to have a partner to run the company with. Do you... ",
+    text: "Being a cog in a wheel was never your thing anyway: Welcome to Mutiny - your company! One of the very first online gaming platforms. You have to decide if you want to have a partner to run the company with. Do you... ",
     answers: [
         { text: "Decide to run the company by yourself.", nextQuestion: QMA1 },
         { text: "Know an engineer (Donna Clark) who could be just right - decide to talk her into joining you in this venture.", nextQuestion: QMA2 }, /// Create scenario where she meets Tom > Japan > Space Rider > Atari + Pilgrim
@@ -328,7 +331,7 @@ let QA3 = { // MUTINY PATH
 
 
 let QA32 = { // APPLE INTERVIEW
-    text: `You're interviewing with Apple Inc. for a junior engineer position. It's the final round. You get the last question of the interview: "What is your ultimate desire in your career?" `,
+    text: `You've managed to land an interview with Apple Inc. for a junior engineer position. It's the final round. You get the last question of the interview: "What is the ultimate desire in your career?" `,
     answers: [
         { text: "To be a part of a greater whole - knowing that I contributed to something that might change the world.", nextQuestion: QA4 },
         { text: "To create something special of my own that I can be proud of, though not quite sure what it is yet.", nextQuestion: QA3 },
@@ -341,7 +344,7 @@ let QA331 = { // CARDIFF WORK - MID
     text: " The lead hardware engineer accepted your ideas and is on board on implementing them. However, he realises that implementing ALL of the features will come at a cost at possibly slower CPU, compromising the speed of the PC. And that decides if it makes the cut to the market. Do you....:  ",
     answers: [
         { text: "Decide to fully implement your ideas, even at the cost of runtime. It's the only chance to make a difference in the PC landscape, and the door is closing soon with a lot of competition around.", nextQuestion: QA441 },
-        { text: `Accept that faster CPU will require to tone down on the GUI features you've been building. Infact, the hardware engineer asks you to work on the idea he's been trying to implement.  `, nextQuestion: QACE2 },//// Portable PC
+        { text: `Accept that faster CPU will require to tone down on the GUI features you've been building. Infact, the hardware engineer asks you to work on a separate project outside work...  `, nextQuestion: QEWOZG },//// Portable PC
     ]
 }
 
@@ -358,7 +361,7 @@ let QA31 = { // CARDIFF WORK - EARLY
 }
 
 let QA21 = { // CARDIFF WORK - EARLY
-    text: `Welcome to the office of "Cardiff Electrics". You will be working in tandem with head business manager (Joe MacMillan) and head hardware engineer (Gordon Clark). Previous to your employment they have reversed engineered IBM PC BIOS and are facing a massive lawsuit. The only way to save the company is for you to write a completely new OS, without ever referencing to the BIOS code. Do you take the challenge?`,
+    text: `Welcome to the office of Cardiff Electrics. You will be working in tandem with head business manager (Joe MacMillan) and head hardware engineer (Gordon Clark). Previous to your employment they have reversed engineered IBM PC BIOS and are facing a massive lawsuit. The only way to save the company is for you to write a completely new OS, without ever referencing to the BIOS code. Do you take the challenge?`,
     answers: [
         { text: "Look for another job. Do they think you're crazy? This can easily make you go to jail.", nextQuestion: QA32 },
         { text: "Take the challenge and seclude yourself to work. ", nextQuestion: QA31 },
