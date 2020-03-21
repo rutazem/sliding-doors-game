@@ -22,14 +22,30 @@ let question = document.querySelector(".question")
 // let newsubtxt = subtxt.style.display = "bloc"
 
 ////////// TYPED TEXT CHANGE
+
+// answer1.disabled = true;
+// answer2.disabled = true;
+
+
+// function haltBtn() {
+
+//     answer1.delay(5000).disabled = false;
+//     answer2.delay(5000).disabled = false;
+// }
+// haltBtn()
+
+
+
+
 function changeText(target, input) {
-    //alert(input)
+
+
     target.innerHTML = `<span class="hidden">.</span>`
     let writeALetter = function (index) {
-        //alert('hey')
+
         target.innerHTML = target.innerHTML + input[index]
         if (index === input.length - 1) {
-            //clearInterval(interval)
+
         } else {
             setTimeout(() => writeALetter(index + 1), 40)
         }
@@ -47,10 +63,12 @@ function changeText(target, input) {
 
 
 
+
 ////////////// START GAME
 
 enter.onclick = function () {
     enter.style.display = "none"
+
 
     setTimeout(() => {
         head.style.display = "block"
@@ -90,9 +108,12 @@ function renderQuestion(q) {
     question.innerHTML = q.text;
     //changeText(question, questionOBJ.questionOne)
 
+
     renderAnswer(answer1, q.answers[0]);
 
     renderAnswer(answer2, q.answers[1])
+
+
 
 }
 
@@ -105,6 +126,8 @@ renderQuestion(QA)
 
 
 function renderAnswer(domElement, answer) {
+
+
 
     console.log(answer)
 

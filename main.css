@@ -135,6 +135,7 @@ body {
   margin-top: 20px;
 
   margin: 40px;
+  /* outline: red; */
 
 }
 
@@ -159,7 +160,7 @@ body {
 
   margin-top: 300px;
   font-size: 30px;
-  outline: none;
+  /* outline: none; */
 }
 
 
