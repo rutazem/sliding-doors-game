@@ -23,29 +23,20 @@ let question = document.querySelector(".question")
 
 ////////// TYPED TEXT CHANGE
 
-// answer1.disabled = true;
-// answer2.disabled = true;
 
 
-// function haltBtn() {
-
-//     answer1.delay(5000).disabled = false;
-//     answer2.delay(5000).disabled = false;
-// }
-// haltBtn()
-
-
+let currentlyWriting = false
 
 
 function changeText(target, input) {
 
-
+    currentlyWriting = true
     target.innerHTML = `<span class="hidden">.</span>`
     let writeALetter = function (index) {
 
         target.innerHTML = target.innerHTML + input[index]
         if (index === input.length - 1) {
-
+            currentlyWriting = false
         } else {
             setTimeout(() => writeALetter(index + 1), 40)
         }
@@ -113,14 +104,30 @@ function renderQuestion(q) {
 
     renderAnswer(answer2, q.answers[1])
 
-
-
 }
-
 
 renderQuestion(QA)
 
 
+
+
+
+
+
+
+
+
+
+// function haltBtn() {
+
+// answer1.delay(5000).disabled = false;
+// answer2.delay(5000).disabled = false;
+// // }
+// haltBtn()
+
+
+
+// domElement.delay(10000).disabled = false;
 
 ////////// Resursive function
 
@@ -133,13 +140,26 @@ function renderAnswer(domElement, answer) {
 
     if (answer.restart === true) {
         domElement.onclick = () => window.location.reload()
+
+
     } else if (answer.nextQuestion) {
 
-        domElement.onclick = () => renderQuestion(answer.nextQuestion)
+        domElement.onclick = () => {
 
-    } else {
-        domElement.onclick = () => console.log("finished")
+            if (!currentlyWriting) {
+                renderQuestion(answer.nextQuestion)
+            }
+        }
+
+
+
+    } else if (answer.credits) {
+        domElement.onclick = () => window.open(answer.credits)
+
     }
+
+
+
     changeText(domElement, answer.text)
 
     // domElement.innerHTML = answer.answer
