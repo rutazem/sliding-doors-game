@@ -34,7 +34,7 @@
 let QEMIDI = {
     text: `<b>The End:</b><br> The gaming company that has funded developing "Maze shot" into "MIDI Maze" was Atari Corp. - an American manufacturer of computers and video game consoles. "MIDI Maze" made it to be one of the top game of the 80s. `,
     answers: [
-        { text: "Credits:", },
+        { text: "MIDI Maze?", credits: "https://en.wikipedia.org/wiki/MIDI_Maze" },///////
         { text: "Restart your future", restart: true },
     ]
 }
@@ -43,7 +43,7 @@ let QEMIDI = {
 let QEMPIL = {
     text: `<b>The End:</b><br> Over several years you have finished "Pilgrim" and developed a beautiful relationship with Tom. You go back to US and present your game in COMDEX'89. However, you receive a rejecting review, claiming you have built a game that is almost impossible to win. `,
     answers: [
-        { text: "Credits:", },
+        { text: "Story of a Pilgrim", credits: "http://www.thehoweofitall.com/" },
         { text: "Restart your future", restart: true },
     ]
 }
@@ -90,7 +90,7 @@ let QMV3 = { /// Chatroom Path > move to SF
 
 
 let QMT2 = { /// TOM PATH>Game path
-    text: `Since Tom has joined, you started developing two more games. This time: first person shooter "Maze Shot" and adventure based game "Pilgrim". As both of them gain popularity, (especially "Maze Shot"), Tom is "headhunted" and asked to join a high-level paying job in Tokyo as a software eng. He's asking you to come with him. Do you... `,
+    text: `Since Tom has joined, you started developing two more games. This time: first person shooter "Maze Shot" and adventure based game "Pilgrim". As both of them gain popularity, (especially "Maze Shot"), Tom is headhunted and asked to join a high-level paying job in Tokyo as a software eng. He's asking you to come with him. Do you... `,
     answers: [
         { text: `Remain with Mutiny to finish developing "Maze Shot" for a gaming company. `, nextQuestion: QEMIDI },
         { text: `Move to Tokyo with Tom and qontinue with "Pilgrim". This is the biggest personal project you have done and you can't leave it behind. `, nextQuestion: QEMPIL },
@@ -108,7 +108,7 @@ let QMT3 = { /// CHAT PATH>money
 
 
 let QMA1 = { ///Cam works alone > Tom -yes no> Japan- yes no
-    text: `By yourself, you've managed to hire several programmers. Together you are developing a game called "Parallax",a text based fantasy adventure! You notice that someone has hacked your network, allowing them play subscription free. You track them down to where they live. As you knock, a young guy names Tom opens the door. It was his strategy of attracting your attention and asks you to hire him as a dev. Do you... `,
+    text: `By yourself, you've managed to hire several programmers. Together you are developing a game called "Parallax",a text based fantasy adventure! You notice that someone has hacked your network, allowing them play subscription free. You track them down to where they live. As you knock, a young guy named Tom opens the door. It was his strategy of attracting your attention. He asks you to hire him as a game dev. Do you... `,
     answers: [
         { text: "This guy's going straight to jail.", nextQuestion: QMT3 },
         { text: "Fine, we need an obnoxious hacker on our team. Also - he'll work for free.", nextQuestion: QMT2 },
@@ -118,7 +118,7 @@ let QMA1 = { ///Cam works alone > Tom -yes no> Japan- yes no
 let QEDW = {
     text: `<b>The End:</b><br> As "Mutiny" went public, it's value plummited more than expected. No one cashed out in the end.`,
     answers: [
-        { text: "Credits:", },
+        { text: "There are no credits Here, the only option is to restart the game.", },
         { text: "Restart your future", restart: true },
     ]
 }
@@ -148,7 +148,7 @@ let QMA2 = { /// Donna accepted - sell yes no > SF > Macmillan
 let QACE2 = { // The End
     text: "<b>The End:</b><br>Path of creating Portable PC ",
     answers: [
-        { text: " Credits:  " },
+        { text: "Let's see.", credits: "https://www.youtube.com/watch?v=PsjMmAqmblQ" },
         { text: " Restart your future", restart: true },
     ]
 }
@@ -193,7 +193,7 @@ let QAE72 = { // Cam saves the PC  and makes it the only competitor to Mac
 let QAE71 = { // Cam quits and cardiff goes bust because of mediocricy
     text: "<b>The End:</b><br>Two days later Apple Inc is demoing the the first Mackintosh in COMDEX'83. Everyone from your team realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. ",
     answers: [
-        { text: " What they've lost", credits: "https://www.youtube.com/watch?v=QDFosFi2NbU" },
+        { text: "What they've lost", credits: "https://www.youtube.com/watch?v=QDFosFi2NbU" },
         { text: " Restart your future ", restart: true },
     ]
 }
@@ -215,7 +215,7 @@ let QAE61 = {
 let QAE62 = { // The end where cam loses everything apart motorcycle
     text: "<b>The End:</b><br>You have taken a week away from work. You're ready to drive back as you receive a call from your product manager Joe, telling you that they had to take out the part of your GUI in order to make a live demo, as the PC was not loading the last minute. They have made contracts with production that same day and this will be the final release model. A day later Apple Inc is demoing the the first Mackintosh in COMDEX. Everyone realises that your GUI could have been the only competition possibility. Your company goes bust as the PC rapidly loses the interest due to its similarity to all other PCs in the market. ",
     answers: [
-        { text: " Credits: ", }, // mutiny?
+        { text: "What they've lost", credits: "https://www.youtube.com/watch?v=QDFosFi2NbU" }, // mutiny?
         { text: " Restart your future ", restart: true },
     ]
 }
@@ -238,7 +238,7 @@ let QAE52 = { //The End with Mackintosh/1984 ad
 let QEWOZG = { //The end with wozniak + gordon
     text: "<b>The End:</b><br>Your idea didn't make it to the main cut, but you were onboarded on a secret project that only he was developing on side - <b>portable computers</b>. He asked you to leave the company with him and implement your idea for the portable's GUI.",
     answers: [
-        { text: " Credits:  ", },
+        { text: " The First Portable ", credits: "https://www.youtube.com/watch?v=7wjJYqUkHd8" },
         { text: " Restart your future", restart: true },
     ]
 }
@@ -249,7 +249,7 @@ let QA5 = {
     text: "Your idea to make computers interactive and speak back to the user had made the cut to the final product. Because of this feature you've been asked to participate in the marketing campaign of the release. ",
     answers: [
         { text: " Accept the invitation ", nextQuestion: QAE52 },
-        { text: " You'd rather not ", nextQuestion: QACE2 },
+        { text: `"I hate marketing."`, nextQuestion: QACE2 },
     ]
 }
 
@@ -268,7 +268,7 @@ let QA42 = {
 let QA41 = {
     text: "<b>The End:</b><br>So it happened that someone from Cardiff Electrics came up with an idea just like yours and had guts to impplement it. Their PC was showcased it at COMDEX'83 and picked up the press noise quite fast. ", /// APPLE //// someone from CARDIFF electrics comes up with GUI in a live demo????
     answers: [
-        { text: " Credits: ", }, // mutiny?
+        { text: "History of GUI ", credits: "https://en.wikipedia.org/wiki/History_of_the_graphical_user_interface" }, // mutiny?
         { text: " Restart your future ", restart: true }
     ]
 }
@@ -372,7 +372,7 @@ let QA22 = { // START
 let QA = { // START
     text: "It’s 1984. Your name is Cameron Howe. You're about to graduate as a software engineer in Texas, Dallas. Nothing matters to yo more than the future of coputers. You get an offer to quit university and take up job to write a new OS for a PC project for utilities company. Do you take the offer?",
     answers: [
-        { text: "Take the offer, but with the only condition: to double your proposed salary.", nextQuestion: QA21 },
+        { text: "Take the offer.", nextQuestion: QA21 },
         { text: "Refuse and stay in the university.", nextQuestion: QA22 },
     ]
 }

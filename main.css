@@ -6,7 +6,7 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
-  color: #80FF80;
+  color: rgb(0, 0, 0);
   background-color: black;
 
   display: flex;
@@ -61,7 +61,8 @@ body {
   -webkit-text-fill-color: black;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #80FF80;
+
+  -webkit-text-stroke-color: #218347;
 
   font-size: 80px;
   color: #003200;
@@ -77,7 +78,7 @@ body {
   }
 
   to {
-    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 30px #229c1e, 0 0 40px #229c1e, 0 0 50px #229c1e, 0 0 60px #229c1e, 0 0 70px #229c1e, 0 0 80px #229c1e;
+    text-shadow: 0 0 10px rgb(116, 179, 138), 0 0 30px #229c1e, 0 0 40px #3e8154, 0 0 50px #3e8154, 0 0 60px #3e8154, 0 0 70px #3e8154, 0 0 80px #3e8154;
   }
 }
 
@@ -86,6 +87,7 @@ body {
 }
 
 .subtxt {
+  color: #1cb200;
   font-size: 30px;
   font-family: serif;
   flex-wrap: wrap;
