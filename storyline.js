@@ -62,7 +62,7 @@ let QEMMW = {
 }
 
 let QEMUW = {
-    text: `<b>The End:</b><br>You have stopped your network, every day you have lost dozens of users. however you were able to track down the source - it was MacMillan Utilities, the antivirus company who released the virus in the first place. - you were able to sue them and win the case. Your userbase recovered. `,
+    text: `<b>The End:</b><br>You have stopped your network, every day you have lost dozens of users. however you were able to track down the source - it was MacMillan Utilities, the antivirus company who released the virus in the first place. You were able to sue them and win the case. Your userbase recovered. `,
     answers: [
         { text: "Safety is not real", credits: "https://www.youtube.com/watch?v=hnEun07xEUU" },
         { text: "Restart your future", restart: true },
@@ -225,7 +225,7 @@ let QAE62 = { // The end where cam loses everything apart motorcycle
 ///////////////// APPLE ENDING
 
 let QAE52 = { //The End with Mackintosh/1984 ad
-    text: `<b>The End:</b><br>Your contribution to the industry will change its' landscape forever. It's the first Mackintosh. You're the person with the sledgehammer in the "1984" ad. You're the mind behind the idea of "Hello. I'm Mackintosh." `,
+    text: `<b>The End:</b><br>Your contribution to the industry will change its landscape forever. It's the first Mackintosh. You're the person with the sledgehammer in the "1984" ad. You're the mind behind the idea of "Hello. I'm Mackintosh." `,
     answers: [
         { text: "1984", credits: "https://www.youtube.com/watch?v=VtvjbmoDx-I" },
         { text: "Restart your future", restart: true },
@@ -300,7 +300,7 @@ let QA442 = { /////////// CREATE A GAME ON SIDE -  AVERAGE GUI - BUST, TAKES YOU
 
 /// APPLE INC START WORK
 let QA4 = {
-    text: "Congratulations! You're now an official emploee of Apple Inc. They ask you to contribute to the finalising of the project they have been working on, it might be a defining factor to their project. ",
+    text: "Congratulations! You're now an official employee of Apple Inc. They ask you to contribute to the finalising of the project they have been working on, it might be a defining factor to their project. ",
     answers: [
         { text: ` "I have been rejected too many times. If this fails, I risk my reputation and possibly whole future. I can't do it." `, nextQuestion: QA41 },
         { text: ` "I have an idea, but not sure if they will accept it. We can try. This could totally make me seem crazy." `, nextQuestion: QA42 },
@@ -370,7 +370,7 @@ let QA22 = { // START
 
 
 let QA = { // START
-    text: "It’s 1984. Your name is Cameron Howe. You're about to graduate as a software engineer in Texas, Dallas. Nothing matters to yo more than the future of coputers. You get an offer to quit university and take up job to write a new OS for a PC project for utilities company. Do you take the offer?",
+    text: "It’s 1984. Your name is Cameron Howe. You're about to graduate as a software engineer in Texas, Dallas. Nothing matters to you more than the future of coputers. You get an offer to quit university and take up job to write a new OS for a PC project for utilities company. Do you take the offer?",
     answers: [
         { text: "Take the offer.", nextQuestion: QA21 },
         { text: "Refuse and stay in the university.", nextQuestion: QA22 },
