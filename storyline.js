@@ -370,7 +370,7 @@ let QA22 = { // START
 
 
 let QA = { // START
-    text: "It’s 1984. Your name is Cameron Howe. You're about to graduate as a software engineer in Texas, Dallas. Nothing matters to you more than the future of coputers. You get an offer to quit university and take up job to write a new OS for a PC project for utilities company. Do you take the offer?",
+    text: "It’s 1984. Your name is Cameron Howe. You're about to graduate as a software engineer in Texas, Dallas. Nothing matters to you more than the future of computers. You get an offer to quit university and take up job to write a new OS for a PC project for utilities company. Do you take the offer?",
     answers: [
         { text: "Take the offer.", nextQuestion: QA21 },
         { text: "Refuse and stay in the university.", nextQuestion: QA22 },
