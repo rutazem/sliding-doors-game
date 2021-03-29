@@ -124,7 +124,7 @@ let QEDW = {
 }
 
 let QMA2 = { /// Donna accepted - sell yes no > SF > Macmillan
-    text: `You and your business partner are working really well in tandem. However, with Donna's influence "Mutiny" is becoming a basic service provider, rather than your envisioned gaming platform. You're developing communication tools between users that could become something bigger. You get an offer to go pulic. Donna and most of your team wants to sell. Do you.. `,
+    text: `You and your business partner are working really well in tandem. However, with Donna's influence "Mutiny" is becoming a basic service provider, rather than your envisioned gaming platform. You're developing communication tools between users that could become something bigger. You get an offer to go public. Donna and most of your team wants to sell. Do you.. `,
     answers: [
         { text: "Agree - this is not what you have envisioned for the company to become. You could re-start the gaming company.", nextQuestion: QEDW },
         { text: "Go against the team, and don't sell. You could raise more VC and move to San Francisco to develop what you have.", nextQuestion: QMV3 },
